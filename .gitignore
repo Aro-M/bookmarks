@@ -3,9 +3,6 @@
 ./bookmarks/lib
 ./bookmarks/lib64
 .idea/
-bookmarks/lib/python3.10/site-packages/Pillow.libs/
-bookmarks/lib/python3.10/site-packages/Pillow-9.2.0.dist-info/
-bookmarks/lib/python3.10/site-packages/PIL/
 bookmarks/__pycache__
 account/__pycache__
 account/migrations/__pycache__/
