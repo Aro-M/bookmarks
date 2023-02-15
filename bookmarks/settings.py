@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'social_django',
     'django_extensions',
+    'images.apps.ImagesConfig',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,8 @@ SOCIAL_AUTH_FACEBOOK_SECRET = '4acd3d970b49d6750c25ad6f999312a5' # Facebook App 
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 
 ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
+
+if DEBUG:
+ import mimetypes
+ mimetypes.add_type('application/javascript', '.js', True)
+ mimetypes.add_type('text/css', '.css', True)
