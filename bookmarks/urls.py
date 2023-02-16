@@ -17,4 +17,4 @@ if settings.DEBUG:
                           document_root=settings.MEDIA_ROOT)
     import mimetypes
     mimetypes.add_type('application/javascript', '.js', True)
-    mimetypes.add_type('text/css', '.css', True)
+    mimetypes.add_type('/css', '.css', True)
