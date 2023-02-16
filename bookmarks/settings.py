@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'images.apps.ImagesConfig',
     'actions.apps.ActionsConfig',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+]
+
+
+INTERNAL_IPS = [
+ '127.0.0.1',
 ]
 
 ROOT_URLCONF = 'bookmarks.urls'
@@ -159,3 +166,7 @@ if DEBUG:
  }
 
  THUMBNAIL_DEBUG = True
+
+ REDIS_HOST = 'localhost'
+ REDIS_PORT = 6379
+ REDIS_DB = 0
